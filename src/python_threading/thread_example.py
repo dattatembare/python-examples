@@ -1,3 +1,8 @@
+# A thread stops when :
+#
+# run() method terminates normally. [or]
+# an unhandled exception causes run() method to terminate abruptly.
+
 import logging
 import threading
 import time
@@ -18,3 +23,12 @@ for i in range(3):
         print(time.ctime(), t.is_alive(), t.name)
         sleep(5)
     print(time.ctime(), t.is_alive(), t.name)
+
+# Result:
+# Executing thread..0
+# Wed Aug  7 16:24:52 2019 False Thread# 0
+# Executing thread..1
+# Wed Aug  7 16:24:52 2019 False Thread# 1
+# Wed Aug  7 16:24:57 2019 False Thread# 1
+# Executing thread..2
+# Wed Aug  7 16:24:57 2019 False Thread# 2
