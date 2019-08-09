@@ -3,10 +3,10 @@
 my_list = [1, 2, 3, 4, 5]
 
 # Non pythonic
-# if len(my_list) >= 5:
-#     print(my_list[5])
-# else:
-#     print('Index does not exist')
+if len(my_list) > 5:
+    print(my_list[5])
+else:
+    print('Index does not exist')
 
 # Pythonic
 try:
@@ -27,7 +27,7 @@ if os.access(my_file, os.R_OK):
 else:
     print("File can't be accessed")
 
-# # No race condition (pythonic)
+# No race condition (pythonic)
 try:
     f = open(my_file)
 except IOError as e:
