@@ -23,4 +23,6 @@ class SuperHero(Person):
 # p.identity()
 
 s = SuperHero('Datta', 'Supper...')
+print(isinstance(s, Person))  # Checking if instance of parent class
 s.identity()
+
