@@ -79,3 +79,29 @@ print(a.split())  # ['Datta', 'Tembare']
 
 b = 'Datta'
 print(f'Use of split:: {b.split()}')  # ['Datta']
+
+# Floor division - division that results into whole number adjusted to the left in the number line
+print(5 // 2)  # 2
+print(8 // 2)  # 4
+
+# Exponent - left operand raised to the power of right -> x**y (x to the power y)
+print(2 ** 2)
+print(2 ** 3)
+
+# Identity operators in Python
+print('Identity operators in Python - check object refrences identity')
+x1 = 5
+y1 = 5
+x2 = 'Hello'
+y2 = 'Hello'
+x3 = [1, 2, 3]
+y3 = [1, 2, 3]
+
+print(x1 is not y1)  # Output: False
+print(x2 is y2)  # Output: True
+print(x3 is y3)  # Output: False
+
+print('Equality operator - Checks content')
+print(x1 == y1)  # Output: True
+print(x2 == y2)  # Output: True
+print(x3 == y3)  # Output: True
