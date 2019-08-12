@@ -105,3 +105,10 @@ print('Equality operator - Checks content')
 print(x1 == y1)  # Output: True
 print(x2 == y2)  # Output: True
 print(x3 == y3)  # Output: True
+
+x = {'a': 1, 'b': 2}
+y = {'b': 3, 'c': 4}
+z = {**x, **y}
+print(z)  # {'a': 1, 'b': 3, 'c': 4}
+zz = {**y, **x}
+print(zz)  # {'b': 2, 'c': 4, 'a': 1}
