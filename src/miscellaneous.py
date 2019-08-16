@@ -108,3 +108,144 @@ print('Equality operator - Checks content')
 print(x1 == y1)  # Output: True
 print(x2 == y2)  # Output: True
 print(x3 == y3)  # Output: True
+
+################################################################
+
+"""
+10 Essential Python Tips And Tricks For Programmers Python is one of the most preferred languages out there.
+Its brevity and high readability makes it so popular among all programmers.
+So here are few of the tips and tricks you can use to bring up your Python programming game.
+"""
+
+# 1. In - Place Swapping Of Two Numbers.
+x, y = 10, 20
+print(x, y)
+x, y = y, x
+print(x, y)
+# Output:
+#
+# 10
+# 20
+# 20
+# 10
+
+# 2. Reversing a string in Python
+
+a = "GeeksForGeeks"
+print("Reverse is", a[::-1])
+# Output:
+#
+# Reverse is skeeGroFskeeG
+
+# 3. Create a single string elements in list
+
+a = ["Geeks", "For", "Geeks"]
+print(" ".join(a))
+# Output:
+#
+# Geeks
+# For
+# Geeks
+
+# 4. Chaining Of Comparison Operators.
+n = 10
+result = 1 < n < 20
+print(result)
+result = 1 > n <= 9
+print(result)
+# Output:
+#
+# True
+# False
+
+# 4. Print The File Path Of Imported Modules.
+
+import os
+import socket
+
+print(os)
+print(socket)
+
+
+# Output:
+# < module 'os' from '/usr/lib/python3.5/os.py' >
+# < module 'socket' from '/usr/lib/python3.5/socket.py' >
+
+# 5. Use Of Enums In Python.
+
+class MyName:
+    Geeks, For, Geeks = range(3)
+
+
+print(MyName.Geeks)
+print(MyName.For)
+print(MyName.Geeks)
+
+
+# Output:
+#
+# 2
+# 1
+# 2
+
+# 6. Return Multiple Values From Functions.
+
+
+def x():
+    return 1, 2, 3, 4
+
+
+a, b, c, d = x()
+
+print(a, b, c, d)
+# Output:
+#
+# 1
+# 2
+# 3
+# 4
+
+# 7. Find The Most Frequent Value In A List.
+
+
+test = [1, 2, 3, 4, 2, 2, 3, 1, 4, 4, 4]
+print(max(set(test), key=test.count))
+# Output:
+#
+# 4
+
+# 8. Check The Memory Usage Of An Object.    
+import sys
+
+x = 1
+print(sys.getsizeof(x))
+# Output:
+# 
+# 28
+
+# 9. Print string N times.    
+n = 2
+a = "GeeksforGeeks"
+print(a * n)
+# Output:
+# GeeksforGeeksGeeksforGeeks
+
+# 10.Checking if two words are anagrams    
+from collections import Counter
+
+
+def is_anagram(str1, str2):
+    return Counter(str1) == Counter(str2)
+
+
+print(is_anagram('geek', 'eegk'))
+
+print(is_anagram('geek', 'peek'))
+# Output:
+# 
+# True
+# False
+
+###########################################################
+
+print('Datta' * 5)
