@@ -23,3 +23,23 @@ xs = {'a': 4, 'b': 3, 'c': 2, 'd': 1}
 xs = sorted(xs.items(), key=operator.itemgetter(1))
 print(xs)
 # [('d', 1), ('c', 2), ('b', 3), ('a', 4)]
+
+########################################################
+
+# The get() method on dicts
+# and its "default" argument
+
+name_for_userid = {
+    382: "Alice",
+    590: "Bob",
+    951: "Dilbert",
+}
+
+
+def greeting(userid):
+    return "Hi %s!" % name_for_userid.get(userid, "there")
+
+
+print(greeting(382))  # "Hi Alice!"
+
+print(greeting(333333))  # "Hi there!"
