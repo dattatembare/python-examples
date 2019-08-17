@@ -1,4 +1,4 @@
-#Python Language Features and Tricks
+# Python Language Features and Tricks
 
 - Python Language Features and Tricks
 - Pythonic way to write a Python code
