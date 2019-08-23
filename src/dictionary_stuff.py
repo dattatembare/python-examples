@@ -67,3 +67,16 @@ print(f"New Dictionary : {dict}")
 
 dict = dict.fromkeys(seq, 'null')  # New Dictionary : {'name': None, 'age': None, 'sex': None}
 print(f"New Dictionary : {str(dict)}")  # New Dictionary : {'name': 'null', 'age': 'null', 'sex': 'null'}
+
+
+#############################
+
+def test_dict(value):
+    key_value = 'OTHR:1, DRT: 2'
+    kv_dict = {kv[0].strip(): kv[1].strip() for kv in [vals.strip().split(':') for vals in key_value.split(',')]}
+    return kv_dict.get(value, value)
+
+
+print(test_dict('OTHR'))
+print(test_dict('DRT'))
+print(test_dict('123'))

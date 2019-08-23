@@ -249,3 +249,13 @@ print(is_anagram('geek', 'peek'))
 ###########################################################
 
 print('Datta' * 5)
+
+# Square of number
+print(3 ** 2)  # 9
+
+###########################################################
+
+gen = (i for i in range(100000))
+print(f'Size (in bytes) aquired by generator {sys.getsizeof(gen)}')
+li = [i for i in range(100000)]
+print(f'Size (in bytes) aquired by list {sys.getsizeof(li)}')
