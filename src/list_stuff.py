@@ -19,3 +19,6 @@ import itertools
 a = [[1, 2], [3, 4], [5, 6]]
 print(list(itertools.chain.from_iterable(a)))  # [1, 2, 3, 4, 5, 6]
 print(sum(a, []))  # [1, 2, 3, 4, 5, 6]
+
+for i in range(3):
+    print(i+1, end='')
