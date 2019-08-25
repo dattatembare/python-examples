@@ -1,9 +1,10 @@
 import collections
 
 ### Most common elements in an iterable (collections.Counter)
-
+# Histogram using Counter
 A = collections.Counter([1, 1, 2, 2, 3, 3, 3, 3, 4, 5, 6, 7])
 print(A)  # Counter({3: 4, 1: 2, 2: 2, 4: 1, 5: 1, 6: 1, 7: 1})
+
 print(A.most_common(1))  # [(3, 4)]
 print(A.most_common(3))  # [(3, 4), (1, 2), (2, 2)]
 
@@ -23,3 +24,7 @@ Q.rotate(3)
 print(Q)  # deque([2, 1, 3, 5])
 Q.rotate(-3)
 print(Q)  # deque([5, 2, 1, 3])
+
+n = 5
+for i in range(n, 0, -1):
+    print(i)
