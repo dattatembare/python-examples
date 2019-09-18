@@ -1,3 +1,6 @@
+"""
+for-else or while-else could be used like switch statement in Java
+"""
 # use of for else
 def for_else(my_list):
     for i in my_list:

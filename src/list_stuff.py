@@ -20,5 +20,13 @@ a = [[1, 2], [3, 4], [5, 6]]
 print(list(itertools.chain.from_iterable(a)))  # [1, 2, 3, 4, 5, 6]
 print(sum(a, []))  # [1, 2, 3, 4, 5, 6]
 
+print('-----------------------Using print method arguments-----------------------')
 for i in range(3):
     print(i+1, end='')
+print('Above print statement will continue with this line')
+print('-----------------------Using print method arguments-----------------------')
+
+print('-----------------------Even numbers-----------------------')
+even_nums = [num for num in range(2, 100, 2)]
+print(even_nums)
+print('-----------------------Even numbers-----------------------')
