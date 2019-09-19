@@ -1,12 +1,14 @@
-# EAFP - Eaiser to Forgiveness, No permission
-# LBYL - Look Before You Leap
+"""
+EAFP - Eaiser to Forgiveness, No permission
+LBYL - Look Before You Leap
+"""
 
 my_list = [1, 2, 3, 4, 5]
 
 # Non pythonic (LBYL - Look before you leap)
 if len(my_list) > 5:
     print(my_list[5])
-else:a
+else:
     print('Index does not exist')
 
 # Pythonic (EAFP)

@@ -255,11 +255,10 @@ print(3 ** 2)  # 9
 
 ###########################################################
 
-gen = (i for i in range(100000))
-print(f'Size (in bytes) aquired by generator {sys.getsizeof(gen)}')
-li = [i for i in range(100000)]
-print(f'Size (in bytes) aquired by list {sys.getsizeof(li)}')
-
 
 my_tuple = (3, 'text', 'ERROR')
 print('ERROR' in my_tuple)
+
+# print('Three' + 3)  # TypeError: can only concatenate str (not "int") to str
+
+

@@ -14,6 +14,7 @@ print(new_list)
 print(f"{'*' * 10}Shallow copy{'*' * 10}")
 
 print(f"{'*' * 10}Deep copy{'*' * 10}")
+# This is the most memory-intensive operation of the copying
 my_list = [{'fname': 'Datta', 'lname': 'Tembare'}, [1, 2, 3]]
 new_list = copy.deepcopy(my_list)
 
