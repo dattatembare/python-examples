@@ -80,3 +80,38 @@ def test_dict(value):
 print(test_dict('OTHR'))
 print(test_dict('DRT'))
 print(test_dict('123'))
+
+
+class A:
+    num = 10
+
+
+a = A()
+
+print(a.__dict__)  # {}
+print(A.__dict__)
+# {'__module__': '__main__', 'num': 10,
+# '__dict__': <attribute '__dict__' of 'A' objects>,
+# '__weakref__': <attribute '__weakref__' of 'A' objects>, '__doc__': None}
+
+# Type check
+print(type(A))
+# <class 'type'>
+print(type(a))
+# <class '__main__.A'>
+print(type(a.__dict__))
+# <class 'dict'>
+print(type(A.__dict__))
+# <class 'mappingproxy'>
+print(type(type.__dict__))
+# <class 'mappingproxy'>
+print(type(A.__dict__['__dict__']))
+# <class 'getset_descriptor'>
+print(type(type.__dict__['__dict__']))
+# <class 'getset_descriptor'>
+print(a.__dict__ == A.__dict__['__dict__'].__get__(a))
+# True
+print(A.__dict__ == type.__dict__['__dict__'].__get__(A))
+# True
+print(a.__dict__ == type.__dict__['__dict__'].__get__(A)['__dict__'].__get__(a))
+# True
