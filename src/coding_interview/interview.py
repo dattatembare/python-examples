@@ -4,12 +4,14 @@ value = "A long string with a few words in it"
 
 # Reverse character order # “ti ni sdrow….A”
 print(value[::-1])
-# Reverse word order # “it in words...A”
-list_value = [word for word in value.split(' ')]
-new_list = list_value[::-1]
-print(new_list)
 
+# Reverse word order # “it in words...A”
+list_value = [word for word in value.split()]  # value.split() == value.split(' ')
+# if value.split('') then ValueError: empty separator
+new_list = list_value[::-1]
+print(new_list)  # ['it', 'in', 'words', 'few', 'a', 'with', 'string', 'long', 'A']
 new_str = ' '.join(new_list)  # 1
+
 new_str1 = ''
 for word in new_list:
     new_str1 += word + ' '
@@ -29,6 +31,16 @@ def a(v=5):
 
 print(a())
 print(a())
+# default
+# 6
+# default
+# 6
+
+# If there is no return statement then -
+# default
+# None
+# default
+# None
 
 # Object types in python
 # Numbers
