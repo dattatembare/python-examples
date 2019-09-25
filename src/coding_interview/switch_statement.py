@@ -7,8 +7,8 @@ def switch_dictionary(my_str):
     return my_info.get(my_str, "Invalid request")
 
 
-print(switch_dictionary('fname'))
-print(switch_dictionary('pin'))
+print(switch_dictionary('fname'))  # Datta
+print(switch_dictionary('pin'))  # Invalid request
 
 
 def switch_while(my_str):
@@ -24,7 +24,9 @@ def switch_while(my_str):
         print('Hope you are doing great!')
 
 
-switch_while('fname')
+switch_while('fname')  # Datta
 switch_while('lname')
+# Tembare
+# Hope you are doing great!
 
 # something can be done using for-else loop too

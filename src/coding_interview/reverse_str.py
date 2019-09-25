@@ -1,7 +1,7 @@
 # It works by doing [begin:end:step]
-print('DATTA'[::-1])
+print('DATTA'[::-1])  # ATTAD
 
-print(''.join(reversed('DATTA')))
+print(''.join(reversed('DATTA')))  # ATTAD
 
 
 def my_rev(my_str):
@@ -20,5 +20,5 @@ def rev_str_for(my_str):
     return new_str
 
 
-print(my_rev('DATTA'))
-print(rev_str_for('DATTA'))
+print(my_rev('DATTA'))  # ATTAD
+print(rev_str_for('DATTA'))  # ATTAD
