@@ -4,14 +4,37 @@ def sort_array(my_list):
     for j in range(len(my_list) - 1):
         for i in range(len(my_list) - j - 1):
             if my_list[i] > my_list[i + 1]:
-                temp = my_list[i]
-                my_list[i] = my_list[i + 1]
-                my_list[i + 1] = temp
+                # temp = my_list[i]
+                # my_list[i] = my_list[i + 1]
+                # my_list[i + 1] = temp
+                my_list[i], my_list[i + 1] = my_list[i + 1], my_list[i]  # equivalent to above 3 lines
     return my_list
 
 
+print(sort_array(my_list=[52, 25, 27, 72, 81, 18, 35, 13, 8, 5]))
+
+
+def sort_array_dec(my_list):
+    """sort array or bubble array"""
+
+    for j in range(len(my_list) - 1):
+        for i in range(len(my_list) - j - 1):
+            if my_list[i] < my_list[i + 1]:
+                my_list[i], my_list[i + 1] = my_list[i + 1], my_list[i]
+    return my_list
+
+
+print(sort_array_dec(my_list=[52, 25, 27, 72, 81, 18, 35, 13, 8, 5]))
+
+
 def binary_search_iterative(alist, n):
-    slist = sort_array(alist)  # or use sorted(alist) or alist.sort()
+    """
+    Primarry requirement for binary search engine is provided list should be sorted
+    """
+    slist = sort_array(alist)
+    # Alternative sorts
+    # slist = sorted(alist)
+    # alist.sort() <- return None
 
     first = 0
     last = len(slist) - 1
@@ -47,7 +70,7 @@ def binary_search_with_index(alist, n):
 def binary_search_recursive(slist, n, first, last):
     if first > last:
         return False
-    else:   
+    else:
         middle = (first + last) // 2
         if n == slist[middle]:
             return True

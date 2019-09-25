@@ -25,10 +25,11 @@ def is_anagram_dict(str1, str2):
     def char_dict(in_str):
         chars = {}
         for c in in_str.lower().strip()[::1]:
-            if c in chars:
-                chars[c] = chars.get(c) + 1
-            else:
-                chars[c] = 1
+            # if c in chars:
+            #     chars[c] = chars.get(c) + 1
+            # else:
+            #     chars[c] = 1
+            chars[c] = chars.get(c, 0) + 1   # equivalant to above 4 lines
         return chars
 
     return char_dict(str1) == char_dict(str2)
@@ -42,3 +43,4 @@ print(sorted('Datta'))  # ['D', 'a', 'a', 't', 't']
 print(sorted('DaTta'))  # ['D', 'T', 'a', 'a', 't']
 print(sorted('DaTta@186'))  # ['1', '6', '8', '@', 'D', 'T', 'a', 'a', 't']
 print(sorted('Datta'.lower()))  # ['a', 'a', 'd', 't', 't']
+print(sorted('Datta'.upper()))  # ['A', 'A', 'D', 'T', 'T']
