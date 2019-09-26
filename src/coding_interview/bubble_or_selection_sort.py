@@ -1,3 +1,8 @@
+"""
+Bubble sort or selection sort is less efficient than merge sort, time complexity is O(n*2) in average case.
+"""
+
+
 def sort_array(my_list):
     """sort array or bubble array"""
 
