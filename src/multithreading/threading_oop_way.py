@@ -40,7 +40,7 @@ thread2.start()
 threads.append(thread1)
 threads.append(thread2)
 
-# Wait for all threads to complete
+# Wait for all threads to complete, The join() waits for threads to terminate.
 for t in threads:
     t.join()
 print("Exiting Main Thread")
