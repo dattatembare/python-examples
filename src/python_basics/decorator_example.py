@@ -1,6 +1,6 @@
 """
 Decorator is a wraper function around original function, it extends the behaviour of original function
-without modifying it.
+without modifying the original function's behaviour.
 """
 import logging
 from functools import wraps
@@ -10,7 +10,7 @@ log.setLevel(logging.DEBUG)
 
 
 def trace(func):
-    @wraps(func)
+    @wraps(func)  # wraps helps to keep original functions name as is
     def wrapper(*args, **kwargs):
         logging.info('start...')
         result = func(*args, **kwargs)
@@ -20,6 +20,7 @@ def trace(func):
     return wrapper
 
 
+# decorator with arguments
 def timer(**deckwargs):
     def timer_dec(func):
         @wraps(func)

@@ -3,7 +3,7 @@ for a, b, c in zip(*[iter(my_list)] * 3):
     print(a, b, c)
 
 a, *b, c = [1, 2, 3, 4, 5]
-print(a, b, c)
+print(a, b, c)  # 1 [2, 3, 4] 5
 
 a = [0, 1, 2, 3, 4, 5]
 LASTTHREE = slice(-3, None)

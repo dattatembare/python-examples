@@ -27,6 +27,8 @@ if __name__ == '__main__':
     student_list.sort()
     print(student_list)
     student_list.sort(key=lambda s: s[1])
+    print(student_list)
+
     max_score = student_list[0][1]
     second_hihest = student_list[1][1]
     for student in student_list[1::1]:

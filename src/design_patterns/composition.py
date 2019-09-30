@@ -7,7 +7,7 @@ class BookSelf:
         self.books = books
 
     def __str__(self):
-        return f"BookDelf with {len(self.books)} books"
+        return f"BookSelf with {len(self.books)} books"
 
 
 class Book:
@@ -22,5 +22,5 @@ book = Book("Python")
 book2 = Book("Java")
 
 self = BookSelf(book, book2)
-print(self)  # BookDelf with 2 books
+print(self)  # BookSelf with 2 books
 print(self.books)  # This is how we can check the BookSelf storage

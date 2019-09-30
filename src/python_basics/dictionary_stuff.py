@@ -11,6 +11,14 @@ print(z)  # {'a': 1, 'b': 3, 'c': 4}
 zz = {**y, **x}
 print(zz)  # {'b': 2, 'c': 4, 'a': 1}
 
+a = {'x': 1, 'y': 2}
+x = {'a': 1, 'b': 2}
+y = {'b': 3, 'c': 4}
+zzz = {**x, **y, **a}
+print(zzz)
+# {'a': 1, 'b': 3, 'c': 4, 'x': 1, 'y': 2}
+
+
 # How to sort a Python dict by value (== get a representation sorted by value)
 
 xs = {'a': 4, 'b': 3, 'c': 2, 'd': 1}

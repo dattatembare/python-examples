@@ -14,5 +14,5 @@ print('datta'.capitalize())  # Datta
 
 print('DATTA'.casefold())
 print('DATTA'.lower())
-print('DATTA'.center(10))
+print(f".{'DATTA'.center(100)}.")
 

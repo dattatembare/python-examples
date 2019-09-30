@@ -23,7 +23,7 @@ def while_else(my_list):
     while len(my_list) >= i:
         if i == 4:
             print("else skiped")
-            return
+            return  # or break
         i += 1
     else:
         print("while and else executed")
