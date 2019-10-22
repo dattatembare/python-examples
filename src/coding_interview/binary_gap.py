@@ -12,8 +12,11 @@ def solution(N):
     if 0 < N < 2147483647:
         bin = format(N, 'b')
         print(bin)
+        # find letter 'l' indexes and store into list
         gap_list = [i for i, c in enumerate(bin) if c == '1']
         print(gap_list)
+
+        # if only occurance of 'l' then return gap 0
         if len(gap_list) == len(bin):
             return gap
 

@@ -1,5 +1,5 @@
 def sort_array(my_list):
-    """sort array or bubble array"""
+    """sort array or bubble array,"""
 
     for j in range(len(my_list) - 1):
         for i in range(len(my_list) - j - 1):
@@ -30,6 +30,7 @@ print(sort_array_dec(my_list=[52, 25, 27, 72, 81, 18, 35, 13, 8, 5]))
 def binary_search_iterative(alist, n):
     """
     Primarry requirement for binary search engine is provided list should be sorted
+    Time complexity of binary search tree is O(log (n))
     """
     slist = sort_array(alist)
     # Alternative sorts

@@ -1,5 +1,5 @@
 """
-Bubble sort or selection sort is less efficient than merge sort, time complexity is O(n*2) in average case.
+Bubble sort or selection sort is less efficient than merge sort, time complexity is O(n^2) in average case.
 """
 
 
