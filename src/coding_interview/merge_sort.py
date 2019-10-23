@@ -21,12 +21,9 @@ def merge(left, right):
     while left_pointer < len(left) and right_pointer < len(right):
 
         if left[left_pointer] < right[right_pointer]:
-
             result.append(left[left_pointer])
             left_pointer += 1
-
         else:
-
             result.append(right[right_pointer])
             right_pointer += 1
 
