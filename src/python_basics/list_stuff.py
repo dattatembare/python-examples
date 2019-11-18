@@ -52,3 +52,29 @@ print(f'Size (in bytes) aquired by list {sys.getsizeof(li)}')
 
 dt_list = ['D', 'A', 'T', 'T', 'A']
 print(dt_list.count('T'))
+
+# return list with max sum
+data = [[1, 2, 3, 4], [1, 2, 3, 3], [1, 1], [3, 3, 3, 3, 3, 3]]
+print(max(data, key=sum))
+# [3, 3, 3, 3, 3, 3]
+
+my_str_is_list = 'String is list of sequences'
+for seq in my_str_is_list:
+    print(seq, end='')  # String is list of sequences
+
+for seq in my_str_is_list.split(' '):
+    print(seq, end='')  # Stringislistofsequences
+
+for seq in my_str_is_list.split(' '):
+    print(seq, end=' ')  # String is list of sequences
+
+print('')
+x = range(10)
+print(x)
+print(type(x))
+
+a_list = [1, 2, 3, 4, 5]
+nums = ','.join(map(str, a_list))
+print(nums)  # 1,2,3,4,5
+print(reversed(a_list))  # c<list_reverseiterator object at 0x000001547A85DC88>
+print(list(reversed(a_list)))  #[5, 4, 3, 2, 1]

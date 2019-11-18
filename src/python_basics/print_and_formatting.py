@@ -43,10 +43,16 @@ txt = "50"
 x = txt.zfill(10)
 print(x)  # 0000000050
 
-
 intab = "aeiou"
 outtab = "12345"
 trantab = str.maketrans(intab, outtab)
 
 str = "this is string example....wow!!!";
 print(str.translate(trantab))
+
+a = 10
+# print(f'something {(result:=a+2)}') # python3.8
+print(f'something {(a + 2)}')
+print(f'something {a + 2}')
+print('something {a}'.format(a=10 + 2))
+print('something {}'.format(a+2))
