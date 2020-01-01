@@ -1,7 +1,9 @@
+from filecmp import cmp
+
 d = {'a': 1, 'b': 2, 'c': 3, 'd': 4}
-print(d)
-print(d.popitem())
-print(d)
+print(d)  # {'a': 1, 'b': 2, 'c': 3, 'd': 4}
+print(d.popitem())  # ('d', 4)
+print(d)  # {'a': 1, 'b': 2, 'c': 3}
 
 # Merge two dictionaries
 x = {'a': 1, 'b': 2}
@@ -123,3 +125,15 @@ print(A.__dict__ == type.__dict__['__dict__'].__get__(A))
 # True
 print(a.__dict__ == type.__dict__['__dict__'].__get__(A)['__dict__'].__get__(a))
 # True
+
+
+my_dict = {'a': 1, 'b': 2, 'c': 3, 'd': 4}
+print()
+
+test_dict = {None: 'Test', None: 'Test1', None: 'Test2',
+             'name': 'Datta', 'name': 'Dattatraya',
+             'lname': 'Tembare'}
+print(test_dict)
+# {None: 'Test2', 'name': 'Dattatraya', 'lname': 'Tembare'}
+
+print(my_dict.items() == test_dict.items())

@@ -78,3 +78,7 @@ nums = ','.join(map(str, a_list))
 print(nums)  # 1,2,3,4,5
 print(reversed(a_list))  # c<list_reverseiterator object at 0x000001547A85DC88>
 print(list(reversed(a_list)))  #[5, 4, 3, 2, 1]
+
+my_str = "Datta"
+print([my_str].count('Datta'))  # 1
+print([my_str].count('D'))  # 0
