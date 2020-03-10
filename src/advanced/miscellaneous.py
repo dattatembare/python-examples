@@ -18,6 +18,8 @@ print(A5)
 print(A6)
 
 
+
+
 # import this  # --> Print 19 verses called as "Zen of python"
 # Beautiful is better than ugly.
 # Explicit is better than implicit.
@@ -262,4 +264,13 @@ print('ERROR' in my_tuple)
 
 # print('Three' + 3)  # TypeError: can only concatenate str (not "int") to str
 
+print("**********")
+counter = 1
 
+def a():
+    global counter
+    for i in (1,2,3):
+        counter +=1
+        print(c)
+a()
+print(counter)
