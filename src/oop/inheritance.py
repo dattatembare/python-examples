@@ -19,10 +19,14 @@ class SuperHero(Person):
         print(f"...And I'm {self.hero_name}")
 
 
-# p = Person('Datta')
-# p.identity()
+p = Person('Datta')
+p.identity()
+# My name is Datta
 
-s = SuperHero('Datta', 'Supper...')
+s = SuperHero('Dattatraya', 'Supper...')
 print(isinstance(s, Person))  # Checking if instance of parent class
 s.identity()
+# True
+# My name is Dattatraya
+# ...And I'm Supper...
 

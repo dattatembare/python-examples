@@ -24,7 +24,8 @@ print(zzz)
 # How to sort a Python dict by value (== get a representation sorted by value)
 
 xs = {'a': 4, 'b': 3, 'c': 2, 'd': 1}
-
+print(xs.items())
+# dict_items([('a', 4), ('b', 3), ('c', 2), ('d', 1)])
 xs = sorted(xs.items(), key=lambda x: x[1])
 print(xs)
 # [('d', 1), ('c', 2), ('b', 3), ('a', 4)]
@@ -132,8 +133,10 @@ print()
 
 test_dict = {None: 'Test', None: 'Test1', None: 'Test2',
              'name': 'Datta', 'name': 'Dattatraya',
-             'lname': 'Tembare'}
+             'lname': 'Tembare'
+             }
 print(test_dict)
 # {None: 'Test2', 'name': 'Dattatraya', 'lname': 'Tembare'}
 
 print(my_dict.items() == test_dict.items())
+# False

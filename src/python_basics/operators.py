@@ -16,9 +16,9 @@ def foo(required, *args, **kwargs):
 print(foo('Datta'))
 # Datta
 # None
-print(foo('Datta', 1, 2))
+print(foo('Datta', 1, 2, 3))
 # Datta
-# (1, 2)
+# (1, 2, 3)
 # None
 print(foo('Datta', 1, 2, key1='fname', key2='lname'))
 # Datta

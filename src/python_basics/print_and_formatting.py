@@ -43,12 +43,14 @@ txt = "50"
 x = txt.zfill(10)
 print(x)  # 0000000050
 
+#################
 intab = "aeiou"
 outtab = "12345"
 trantab = str.maketrans(intab, outtab)
 
-str = "this is string example....wow!!!";
+str = "this is string example....wow!!!"
 print(str.translate(trantab))
+#################
 
 a = 10
 # print(f'something {(result:=a+2)}') # python3.8

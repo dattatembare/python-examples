@@ -36,11 +36,14 @@ class MyClass:
 
 
 mc = MyClass()
-
+print('use instance')
 # mc.say()  # TypeError: say() takes 0 positional arguments but 1 was given
-MyClass.say()  # Hello
 mc.instance_say()  # Hello
 mc.static_say()  # Hello
+mc.class_say()  # Hello
+print('class level calls')
+# MyClass.instance_say()  # TypeError: instance_say() missing 1 required positional argument: 'self'
+MyClass.say()  # Hello
 MyClass.static_say()  # Hello
 MyClass.class_say()  # Hello
 
