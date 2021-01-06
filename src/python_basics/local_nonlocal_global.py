@@ -1,3 +1,6 @@
+print(f"{'*' * 10}  Local {'*' * 10}")
+
+
 def func_1():
     print(x)  # 10
 
@@ -6,7 +9,7 @@ x = 10
 func_1()
 print(x)  # 10
 
-print('--------------')
+print(f"{'*' * 10}  Local {'*' * 10}")
 
 
 def func_2():
@@ -19,7 +22,7 @@ y = 10
 func_2()
 print(y)  # 10
 
-print('--------------')
+print(f"{'*' * 10} Global Local {'*' * 10}")
 
 
 def func_3():
@@ -33,7 +36,7 @@ z = 10
 func_3()
 print(z)  # 20
 
-print('--------------')
+print(f"{'*' * 10} NonLocal Local {'*' * 10}")
 
 
 def func_4():
@@ -55,7 +58,7 @@ a = 20
 func_4()
 print('6..', a)  # 20
 
-print('--------------')
+print(f"{'*' * 10} Global Local in inner function {'*' * 10}")
 
 
 def func_4():

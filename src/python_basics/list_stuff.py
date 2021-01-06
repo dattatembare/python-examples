@@ -43,14 +43,18 @@ print(dt_list.reverse())  # None
 print(dt_list)  # ['A', 'T', 'T', 'A', 'D']
 print(f"{'*' * 10} Reverse list {'*' * 10}")
 
+print(f"{'*' * 10} Generator and list size using sys.getsizeof(gen) {'*' * 10}")
 import sys
 
 gen = (i for i in range(100000))
-print(f'Size (in bytes) aquired by generator {sys.getsizeof(gen)}')
+print(f'Size (in bytes) acquired by generator {sys.getsizeof(gen)}')
 li = [i for i in range(100000)]
-print(f'Size (in bytes) aquired by list {sys.getsizeof(li)}')
+print(f'Size (in bytes) acquired by list {sys.getsizeof(li)}')
+print(f"{'*' * 10} Generator and list size using sys.getsizeof(gen) {'*' * 10}")
 
 dt_list = ['D', 'A', 'T', 'T', 'A']
+print(dt_list.count('D'))
+print(dt_list.count('A'))
 print(dt_list.count('T'))
 
 # return list with max sum
@@ -82,3 +86,5 @@ print(list(reversed(a_list)))  #[5, 4, 3, 2, 1]
 my_str = "Datta"
 print([my_str].count('Datta'))  # 1
 print([my_str].count('D'))  # 0
+print([my_str].count('a'))  # 0
+print([my_str].count('t'))  # 0

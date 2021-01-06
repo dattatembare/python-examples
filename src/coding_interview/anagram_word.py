@@ -11,10 +11,10 @@ print(is_anagram('Datta', 'dbca'))
 
 
 def is_anagram_1(s1, s2):
-    def sort(s):
-        return sorted(s.lower().strip())
+    if len(s1) != len(s2):
+        return False
 
-    return sort(s1) == sort(s2)
+    return sorted(s1) == sorted(s2)
 
 
 print(is_anagram_1('abcd', 'dbca'))

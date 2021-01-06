@@ -18,12 +18,12 @@ print('-----------')
 def fib_cal2(for_range):
     a, b = 0, 1
     for i in range(for_range):
-        print(a)
+        print(a, end=',')
         a, b = b, a + b
 
 
 fib_cal2(10)
-print('-----------')
+print('\n-----------')
 
 
 def fib_cal_generator(for_range):
@@ -34,4 +34,4 @@ def fib_cal_generator(for_range):
 
 
 for i in fib_cal_generator(10):
-    print(i)
+    print(i, end='')

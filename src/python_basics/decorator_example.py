@@ -1,5 +1,5 @@
 """
-Decorator is a wraper function around original function, it extends the behaviour of original function
+Decorator is a wrapper function around original function, it extends the behaviour of original function
 without modifying the original function's behaviour.
 """
 import logging

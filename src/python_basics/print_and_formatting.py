@@ -44,6 +44,7 @@ x = txt.zfill(10)
 print(x)  # 0000000050
 
 #################
+print(f"{'*' * 10}Use of translate{'*' * 10}")
 intab = "aeiou"
 outtab = "12345"
 trantab = str.maketrans(intab, outtab)

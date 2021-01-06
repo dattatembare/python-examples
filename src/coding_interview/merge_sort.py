@@ -1,5 +1,5 @@
 """
-Merge sort is most efficient sort algorithm, time complexicity is O(n log n) in worst case
+Merge sort is most efficient sort algorithm, time complexity is O(n log n) in worst case
 """
 
 

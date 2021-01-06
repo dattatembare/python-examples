@@ -4,6 +4,9 @@ d = {'a': 1, 'b': 2, 'c': 3, 'd': 4}
 print(d)  # {'a': 1, 'b': 2, 'c': 3, 'd': 4}
 print(d.popitem())  # ('d', 4)
 print(d)  # {'a': 1, 'b': 2, 'c': 3}
+del d['b']
+print(d)  # {'a': 1, 'c': 3}
+print(f"{'*'*10}")
 
 # Merge two dictionaries
 x = {'a': 1, 'b': 2}
@@ -19,7 +22,7 @@ y = {'b': 3, 'c': 4}
 zzz = {**x, **y, **a}
 print(zzz)
 # {'a': 1, 'b': 3, 'c': 4, 'x': 1, 'y': 2}
-
+print(f"{'*'*10}")
 
 # How to sort a Python dict by value (== get a representation sorted by value)
 
@@ -63,7 +66,7 @@ m = {'a': 1, 'b': 2, 'c': 3, 'd': 4}
 print(m.items())  # [('a', 1), ('c', 3), ('b', 2), ('d', 4)]
 print(dict(zip(m.values(), m.keys())))  # {1: 'a', 2: 'b', 3: 'c', 4: 'd'}
 
-# Inversing a dictionary using dict comprehensions
+# Inverting a dictionary using dict comprehensions
 m1 = {v: k for k, v in m.items()}
 print(m1)
 
@@ -73,13 +76,13 @@ print(m)
 print(m.clear())
 
 seq = ('name', 'age', 'sex')
-dict = dict.fromkeys(seq)
-print(f"New Dictionary : {dict}")
+_dict = dict.fromkeys(seq)
+print(f"New Dictionary : {_dict}")
 
-dict = dict.fromkeys(seq, 'null')  # New Dictionary : {'name': None, 'age': None, 'sex': None}
-print(f"New Dictionary : {str(dict)}")  # New Dictionary : {'name': 'null', 'age': 'null', 'sex': 'null'}
+_dict = dict.fromkeys(seq, 'null')  # New Dictionary : {'name': None, 'age': None, 'sex': None}
+print(f"New Dictionary : {str(_dict)}")  # New Dictionary : {'name': 'null', 'age': 'null', 'sex': 'null'}
 
-
+print(f"{'*'*10}")
 #############################
 
 def test_dict(value):
